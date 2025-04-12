@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap 侧边栏样式</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+            #sidebar {
+                min-height: 100vh;
+                background-color: #343a40;
+                color: white;
+            }
+
+            #sidebar.nav-link {
+                color: white;
+            }
+
+            #sidebar.nav-link:hover {
+                background-color: #495057;
+            }
+
+            #content {
+                padding: 20px;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 侧边栏 -->
+            <div class="col-md-3 col-lg-2 d-md-block" id="sidebar">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                首页
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                文章
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                关于
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                联系我们
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 主内容区域 -->
+            <div class="col-md-9 col-lg-10" id="content">
+                <h1>主内容区域</h1>
+                <p>这里是主内容区域，你可以在此添加各种内容，如文章、图片、视频等。</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
